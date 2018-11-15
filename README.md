@@ -70,12 +70,12 @@ node_modules
 In this step, we will create our `index.js` file.
 
 ### Instructions
-
+<!-- 
 * Open `server/index.js`.
 * Require `express` and `body-parser`.
 * Create an express app.
 * Configure the app to parse JSON from the body.
-* Configure the app to listen on port 3001 and display a message when it is listening.
+* Configure the app to listen on port 3001 and display a message when it is listening. -->
 
 <details>
 
@@ -138,20 +138,20 @@ In this step, we will create a controller that will handle the logic to create, 
 
 ### Instructions
 
-* Create a `controllers` folder in `server/`.
+<!-- * Create a `controllers` folder in `server/`.
 * Create a `messages_controller` in `server/controllers/`.
 * Open `server/controllers/messages_controller.js`.
 * Create an array to hold the messages.
 * Create a variable that will keep track of what `id` to assign to messages.
-  * The `id` should start at `0` and increment after every creation.
-* Export an object with methods to create, read, update, and delete messages.
-  * Create - Should be able to create a message using `text` and `time` off of the request body.
-    * Should be able to assign a unique `id` to the message.
-  * Read - Should be able to return the messages array.
-  * Update - Should be able to update the `text` property of a message using the request body.
-    * Should be able to determine which message to update using an `id` url parameter.
-  * Delete - Should be able to delete a message using an `id` url parameter.
-* All methods should send a response of the updated messages array.
+  * The `id` should start at `0` and increment after every creation. -->
+<!-- * Export an object with methods to create, read, update, and delete messages. -->
+  <!-- * Create - Should be able to create a message using `text` and `time` off of the request body.
+    * Should be able to assign a unique `id` to the message. -->
+  <!-- * Read - Should be able to return the messages array. -->
+  <!-- * Update - Should be able to update the `text` property of a message using the request body. -->
+   <!-- Should be able to determine which message to update using an `id` url parameter.  -->
+  <!-- * Delete - Should be able to delete a message using an `id` url parameter.
+* All methods should send a response of the updated messages array. -->
 
 <details>
 
@@ -297,11 +297,11 @@ In this step, we will hook up our controller to our app in `server/index.js`.
 
 ### Instructions
 
-* Open `server/index.js`.
-* Require the messages controller.
-* Create a `post`, `get`, `put`, and `delete` endpoint that use the corressponding method on the messages controller.
+<!-- * Open `server/index.js`.
+* Require the messages controller. -->
+<!-- * Create a `post`, `get`, `put`, and `delete` endpoint that use the corressponding method on the messages controller.
 * The url for this api should be `/api/messages`.
-  * Remember to add on a url parameter of `id` for the methods that are using it.
+  * Remember to add on a url parameter of `id` for the methods that are using it. -->
 
 <details>
 
@@ -379,12 +379,12 @@ In this step, we will test the API endpoints using postman unit tests.
 
 ### Instructions
 
-* Startup the API and make sure it doesn't crash.
-* Open postman.
+<!-- * Startup the API and make sure it doesn't crash. -->
+<!-- * Open postman.
 * Import the `postman_collection` into postman.
 * Run the collection's tests.
   * If all tests do not pass, revist previous steps.
-  * **TESTS WILL ONLY PASS IF THE 'MESSAGES' ARRAY IS EMPTY WHEN THE POSTMAN COLLECTION STARTS** Restart your server (the command is 'rs') to reset your array to empty. 
+  * **TESTS WILL ONLY PASS IF THE 'MESSAGES' ARRAY IS EMPTY WHEN THE POSTMAN COLLECTION STARTS** Restart your server (the command is 'rs') to reset your array to empty.  -->
 
 ### Solution
 

@@ -23,8 +23,13 @@ export default class ChatWindow extends Component {
   }
 
   componentDidMount() {
+    this.refreshMessages();
+    setInterval(() => this.refreshMessages(), 1000)
+  }
+
+  refreshMessages = () => {
     axios.get( url ).then( response => {
-      this.setState({ messages: response.data });
+    this.setState({ messages: response.data });
     });
   }
 
